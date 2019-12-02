@@ -1,0 +1,15 @@
+https://adventofcode.com/2019/day/1
+
+num=list(map(int,input().split(' ')))
+temp=[]
+
+for i in num:
+    while i>0:
+        i=(i//3)-2
+        if i>0:
+            temp.append(i)
+        else:
+            break
+
+#print(temp)
+print(sum(temp))
