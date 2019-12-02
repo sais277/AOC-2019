@@ -1,0 +1,7 @@
+num=list(map(int,input().split(' ')))
+temp=[]
+
+for i in num:
+    a=(i//3)-2
+    temp.append(a)
+print(sum(temp))
