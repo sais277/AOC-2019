@@ -1,0 +1,15 @@
+num=list(map(int,input().split(',')))
+
+for i in range(0,len(num),4):
+    first = num[i + 1]
+    second = num[i + 2]
+    third = num[i + 3]
+    if num[i]==99:
+        break
+    elif num[i]==1:
+        num[third]=num[first]+num[second]
+    elif num[i]==2:
+        num[third] = num[first] * num[second]
+
+
+print(num)
